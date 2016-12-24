@@ -21,14 +21,14 @@ class Phacker.Game.Player
         @rmb.anchor.x= .5
         #@rmb.body.setSize @init.rmb.width, @init.rmb.height
         @rmb.body.bounce.y = 0
-        @rmb.body.gravity.y = @init.rmb.gravity
+        @rmb.body.gravity.y = @init.rmb.gravity  
         @rmb.body.drag.y = @init.rmb.dragy
 
         @rmb.animations.add 'up', [1], 3, true
         @rmb.animations.add 'right', [0, 1, 3, 1], 10, true
         @rmb.animations.play 'right'
 
-        @rmb.body.velocity.x = @init.rmb.vx
+        @rmb.body.velocity.x = @init.rmb.vx  
 
         @cam = {to: 0, i:0} #  val cam location for calulation : intermediate
         @has_low_scored = false
@@ -109,10 +109,8 @@ class Phacker.Game.Player
                     @has_low_scored = true
                     return 'low'
 
-        'not low'
-
-
-
+        return 'not low'
+        
 
     #.----------.----------
     # reset player  when lost life
