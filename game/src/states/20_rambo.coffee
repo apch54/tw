@@ -6,7 +6,7 @@
 #   |_|  \_\__,_|_| |_| |_|_.__/ \___/    ----------ooO--(_)--Ooo-
 #
 #
-# written by fc on 2016-12-08 ;
+# by fc on 2016-12-08
 # rmb stands for rambo
 
 class Phacker.Game.Player
